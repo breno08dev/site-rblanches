@@ -33,6 +33,7 @@ body {
 }
 
 /* --- Delays --- */
+/* Adicionados para escalonar a entrada dos elementos */
 .delay-1 { animation-delay: 0.2s; }
 .delay-2 { animation-delay: 0.4s; }
 .delay-3 { animation-delay: 0.6s; }
@@ -40,23 +41,25 @@ body {
 .delay-5 { animation-delay: 1.0s; }
 
 
-   #new-whatsapp-toast {
-            /* Começa escondido e fora da tela (à direita) */
-            opacity: 0;
-            transform: translateX(100%); 
-            
-            /* Animação */
-            transition: opacity 0.5s ease-out, transform 0.5s ease-out;
-            
-            /* Posição superior-direita */
-            position: fixed;
-            top: 20px;
-            right: 20px;
-            z-index: 50;
-        }
+/* --- Estilos do Toast --- */
+#new-whatsapp-toast {
+    /* Começa escondido e fora da tela (à direita) */
+    opacity: 0;
+    transform: translateX(100%); 
+    
+    /* Animação */
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+    
+    /* Posição (mantida no top-right) */
+    /* position: fixed; Foi movido para o HTML com classes Tailwind */
+    /* top: 20px; */
+    /* right: 20px; */
+    /* z-index: 50; */
+}
 
-        #new-whatsapp-toast.toast-show {
-            /* Estado final (visível) */
-            opacity: 1;
-            transform: translateX(0);
-        }
+#new-whatsapp-toast.toast-show {
+    /* Estado final (visível) */
+    opacity: 1;
+    transform: translateX(0);
+}
+/* O '}' extra foi removido */

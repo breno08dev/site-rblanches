@@ -29,10 +29,8 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     };
 
-    // 
-    // *** CORREÇÃO AQUI: Timer ajustado para 10 segundos (10000 ms) ***
-    //
-    setTimeout(showToast, 10000); 
+   
+    setTimeout(showToast, 20000); 
 
     // Fechar ao clicar no botão "X"
     if (closeToastBtn) {
@@ -44,3 +42,4 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
 }); // Fim do addEventListener
+
