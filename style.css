@@ -43,22 +43,20 @@ body {
    #new-whatsapp-toast {
             /* Começa escondido e fora da tela (à direita) */
             opacity: 0;
-            /* MUDADO: Desliza da direita (100% da sua própria largura) */
             transform: translateX(100%); 
             
             /* Animação */
             transition: opacity 0.5s ease-out, transform 0.5s ease-out;
             
-            /* MUDADO: Posição superior-direita */
+            /* Posição superior-direita */
             position: fixed;
-            top: 20px;   /* Era 'bottom: 20px' */
-            right: 20px; /* Era 'left: 20px' */
+            top: 20px;
+            right: 20px;
             z-index: 50;
         }
 
         #new-whatsapp-toast.toast-show {
             /* Estado final (visível) */
             opacity: 1;
-            /* MUDADO: Posição final na tela */
             transform: translateX(0);
         }

@@ -29,8 +29,10 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     };
 
-    // Agendar o toast para aparecer após 10 segundos (10000 ms)
-    setTimeout(showToast, 30000); 
+    // 
+    // *** CORREÇÃO AQUI: Timer ajustado para 10 segundos (10000 ms) ***
+    //
+    setTimeout(showToast, 10000); 
 
     // Fechar ao clicar no botão "X"
     if (closeToastBtn) {

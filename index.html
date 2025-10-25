@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RB Lanches</title>
     
-    <link rel="icon" href="Assets/fivelanche.png" type="image/jpeg">
+    <link rel="icon" href="Assets/fivelanche.png" type="image/png">
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,15 +13,14 @@
 
     <link rel="stylesheet" href="style.css">
     
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
 
-    </head>
-    
+</head>
 <body class="bg-gray-900 text-white overflow-x-hidden">
 
     <div class="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-gray-900 via-gray-900 to-yellow-600/40 -z-10"></div>
     
-    <div class="container mx-auto px-4 py-8 flex flex-col items-center justify-center min-h-screen pb-32">
+    <div class="container mx-auto px-4 py-8 flex flex-col items-center justify-center min-h-screen">
 
         <header class="mb-6 fade-in">
              <img src="Assets/logo rb - sem fundo.png" alt="Logo RB Lanches" class="w-48 h-48 md:w-56 md:h-56 object-contain soft-pulse">
@@ -53,24 +52,28 @@
             </a>
         </main>
         
-        <footer class="mt-12 text-center text-gray-400 fade-in delay-5 w-full max-w-md">
+        <section class="mt-12 text-center text-gray-400 fade-in delay-5 w-full max-w-md">
             <p class="text-lg font-semibold mb-3 text-gray-200">Horário de Funcionamento</p>
-            <div class="space-y-1 text-sm bg-gray-800/50 border border-gray-700 rounded-lg p-4">
-                <p class="flex justify-between">
+            
+            <div class="space-y-3 text-sm bg-gray-800/50 border border-gray-700 rounded-lg p-4">
+                <p class="flex flex-col items-center md:flex-row md:justify-between">
                     <span class="font-semibold text-gray-100">Segunda:</span> 
                     <span class="text-red-400 font-semibold">Fechado</span>
                 </p>
-                <p class="flex justify-between">
+                <p class="flex flex-col items-center md:flex-row md:justify-between">
                     <span class="font-semibold text-gray-100">Terça a Sexta:</span> 
                     <span>18:30 - 22:30</span>
                 </p>
-                <p class="flex justify-between">
+                <p class="flex flex-col items-center md:flex-row md:justify-between">
                     <span class="font-semibold text-gray-100">Sábado e Domingo:</span> 
                     <span>18:00 - 22:30</span>
                 </p>
             </div>
-            <p class="text-xs text-gray-500 mt-6">
-                &copy; <span id="current-year"></span> RB Lanches. Todos os direitos reservados.
+        </section>
+
+        <footer class="mt-12 text-center text-gray-400 fade-in delay-5 w-full max-w-md">
+            <p class="text-xs text-gray-500">
+                © <span id="current-year"></span> RB Lanches. Todos os direitos reservados.
             </p>
             <p class="text-xs text-gray-500 mt-2">
                 Desenvolvido por 
@@ -82,14 +85,14 @@
                 </a>
             </p>
         </footer>
+
+        <a href="https://wa.me/5516993061020" target="_blank" rel="noopener noreferrer" 
+           class="flex items-center justify-center w-full max-w-md mx-auto bg-amber-500 text-gray-900 p-4 rounded-full text-lg font-bold transition-all duration-300 neon-glow soft-pulse transform hover:scale-105 hover:bg-amber-400
+                  mt-12"> 🚀 Peça Agora!
+        </a>
+
     </div>
     
-    <div class="fixed bottom-0 left-0 w-full p-4 bg-gray-900/50 backdrop-blur-sm">
-         <a href="https://wa.me/5516993061020" target="_blank" rel="noopener noreferrer" class="flex items-center justify-center w-full max-w-md mx-auto bg-amber-500 text-gray-900 p-4 rounded-full text-lg font-bold transition-all duration-300 neon-glow soft-pulse transform hover:scale-105 hover:bg-amber-400">
-            🚀 Peça Agora!
-        </a>
-    </div>
-
     <div id="new-whatsapp-toast" class="w-full max-w-xs">
         <div class="relative bg-gray-800 border border-gray-700 rounded-xl shadow-2xl p-4 flex items-center space-x-3">
             
@@ -110,6 +113,7 @@
             </button>
         </div>
     </div>
+    
     <script src="script.js"></script>
 
 </body>
